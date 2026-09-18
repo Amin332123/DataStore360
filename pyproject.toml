@@ -1,0 +1,30 @@
+[project]
+name = "datastore360"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Amin332123", email = "mohamedaminerahamni6@gamil.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fg-data-profiling==4.20.0",
+    "ipywidgets>=8.1.9",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.3",
+    "pandas>=2.2,<3",
+    "seaborn>=0.13.2",
+    "tabulate>=0.10.0",
+]
+
+[project.scripts]
+datastore360 = "datastore360:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.3.0",
+]
